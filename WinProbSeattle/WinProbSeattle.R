@@ -1,3 +1,10 @@
+library(nflscrapR)
+
+week_16_games <- scrape_game_ids(2018, weeks = 16)
+
+week_16_games %>% 
+	pander::pander()
+
 library(tidyverse)
 
 sea_vs_kc_pbp <- week_16_games %>%
